@@ -322,6 +322,47 @@ $stripe-properties: to bottom, 15%, blue, white;
 }
 ```
 
+### Sass allows & selector usage inside of mixins
+
+mixin안에서 `&` selector를 사용할 경우
+
+```css
+@mixin text-hover($color){
+  &:hover {
+      color: $color; 
+  }
+}
+```
+
+위와같은 mixin이 있을경우 주의사항이 있다.
+1. parent selector가 없을 경우 sass는 에러를 뱉어낸다.
+
+```css
+.word {
+  display: block; 
+  text-align: center;
+  position: relative;
+  top: 40%;
+  @include text-hover(red);
+}
+```
+
+위는 정상적으로 작동하여 아래와 같이 작동한다.
+
+```css
+.word {
+  display: block; 
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.word:hover {
+  color: red;
+}
+```
+
+
 ## Sass String interpolation
 
 mixin에서 변수로 받은 값을 String으로 쓰고자 할때
