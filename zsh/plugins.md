@@ -1,4 +1,4 @@
-ns
+## plugins
 
 oh-my-zsh에는 다양한 [Plugin](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins)들이 존재합니다.
 
