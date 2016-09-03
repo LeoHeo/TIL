@@ -14,3 +14,6 @@ Today I Learned
 [SASS Basic](sass/basic.md)
 
 [SASS Tip](https://gist.github.com/LeoHeo/3ff687cc17bc22d8bef8b4ccde50a1fb)
+
+## CSS
+[RWD 단점](https://gist.github.com/LeoHeo/d1e5365c4f746c8e649d5355cf18c9ec)
