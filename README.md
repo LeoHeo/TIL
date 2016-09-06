@@ -10,6 +10,7 @@ Today I Learned
 
 ## React
 [React 실서비스 적용사례](https://gist.github.com/LeoHeo/47d8d06149afcf7d0081d5ca5dfb2e8d)
+[immutable.js 기본 사용법](https://gist.github.com/LeoHeo/5581fd9e43ee54162bab52fb0c659052)
 
 ## SASS
 [SASS Basic](sass/basic.md)
