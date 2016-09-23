@@ -28,3 +28,6 @@ Today I Learned
 
 ## Shell
 [디렉토리 만들고 바로이동(mkdir && cd)](http://hjh5488.tistory.com/24)
+
+## DevOps
+[신규서버 세팅시 유의사항](https://gist.github.com/LeoHeo/a1eabe0a0fb7004353f14d89f5cdbf6b)
