@@ -25,9 +25,13 @@ Today I Learned
 ## Swift
 [Swift3 basic](http://hjh5488.tistory.com/25)
 
+[Swift Optional Value `?`와 `!` 구분하여 사용하기](http://hjh5488.tistory.com/28)
+
 [Swift Optional Chaining](http://hjh5488.tistory.com/26)
 
 [Swift MVC Design Pattern(Stanford IOS 강좌)](http://hjh5488.tistory.com/27)
+
+
 
 ## Shell
 [디렉토리 만들고 바로이동(mkdir && cd)](http://hjh5488.tistory.com/24)
