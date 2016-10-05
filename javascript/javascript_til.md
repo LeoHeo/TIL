@@ -50,3 +50,44 @@ myObject.func();
 
 아래 closure문법에서의 `this`는 `global window`객체를 가르키기 때문에 `undefined`가 뜨고, `self`가 가르치고 있는 `this`는 아직 `myObject`이기 때문에 `bar`가 출력된다.
 
+
+## function Declaration and Expression
+자바스크립트에서 함수의 선언과 표현에는 차이점이 있다.
+
+### Declaration
+- 미리 자바 스크립트의 실행 컨텍스트(execution context)에 로딩 되어 있으므로 언제든지 호출할 수 있지만
+
+### Expression
+- 인터프리터가 해당 라인에 도달 하였을때만 실행
+
+```javascript
+// 1번
+console.log(foo()); // test logged
+function foo() {
+	return "test";
+}
+
+// 2번
+console.log(bar()); // bar is not function
+var bar = function() {
+	return "test";
+};
+```
+
+### 1, 2번 실행될때
+```javascript
+// Declaration 선언된걸 모두 위로 올림
+// 그래서 아래와 같이 실행됨
+function foo() {
+	return "test";
+}
+console.log(foo());
+
+// 하지만 2번은 Declaration가 아니기 때문에 위로 올리지 않음
+// 그래서 아래와 같은 실행됨
+var bar = undefined;
+console.log(bar());
+bar = function() {
+	return "test";
+}
+```

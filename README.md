@@ -31,3 +31,6 @@ Today I Learned
 
 ## DevOps
 - [신규서버 세팅시 유의사항](https://gist.github.com/LeoHeo/a1eabe0a0fb7004353f14d89f5cdbf6b)
+
+## Javascript
+- [Javascript 오해와 진실](javascript/javascript_til.md)
