@@ -21,10 +21,11 @@ Today I Learned
 
 ## Swift
 - [Swift3 basic](http://hjh5488.tistory.com/25)
+- [Swift Class & Struct & enum 비교](Swift/swift_class_struct_enum.md)
 - [Swift Optional Value `?`와 `!` 구분하여 사용하기](http://hjh5488.tistory.com/28)
 - [Swift Optional Chaining](http://hjh5488.tistory.com/26)
 - [Swift MVC Design Pattern(Stanford IOS 강좌)](http://hjh5488.tistory.com/27)
-- [AutoLayout](AutoLayout.md)
+- [AutoLayout](Swift/AutoLayout.md)
 
 ## Shell
 - [디렉토리 만들고 바로이동(mkdir && cd)](http://hjh5488.tistory.com/24)
