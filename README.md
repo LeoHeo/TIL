@@ -35,3 +35,6 @@ Today I Learned
 
 ## Javascript
 - [Javascript 오해와 진실](javascript/javascript_til.md)
+
+## Firebase
+- [TableView에 Firbase UI 사용 할 경우 스크롤하면 이미지 바인딩이 섞일때 해결방법](https://gist.github.com/LeoHeo/70e614615f99e8e0f82c657f655f92a8)
