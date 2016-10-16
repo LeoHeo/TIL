@@ -1,6 +1,9 @@
 # TIL
 Today I Learned
 
+## Android
+- [Android Parcelable](http://hjh5488.tistory.com/30)
+
 ## Docker
 - [Docker란? Vagrant랑 차이점은?](https://gist.github.com/LeoHeo/fa604b537495dab4faf2f74b0fda4bb0)
 
