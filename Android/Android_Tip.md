@@ -1,5 +1,21 @@
 ## Android Tip
 
+### API Level 16이하
+- API Level 16이하에서는 `RelativeLayout.LayoutParams` 주의사항
+- 만약 `minSdkVersion 16`이라면 `**start, **end` 옵션을 둘다 써줘야 한다.
+
+e.g) 아래와 같이 써준다.
+
+```
+android:layout_alignParentEnd="true"
+android:layout_alignParentRight="true"
+```
+
+```
+android:layout_toStartOf="@id/list_item_crime_solved_check_box"
+android:layout_toLeftOf="@id/list_item_crime_solved_check_box"
+```
+
 ### Styles에서 Title없애고자 할때
 `android:windowNoTitle`로 쓰면 작동을 안한다.
 
