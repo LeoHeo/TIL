@@ -100,4 +100,25 @@ ResourcesCompat.getDrawable(getResources(), R.drawable.lock, null),
         </LinearLayout>
 ```
 
+### 안드로이드 Application
+- 안드로이드에서 공통된 전역변수(싱글톤)를 사용하고 싶을때 Application을 활용할 수 있다.
+- 헌데, 간혹 까먹고 `AndroidManifest.xml`에 집어 넣지 않으면 아래와 같은 에러가 나온다.
 
+```
+Caused by: java.lang.ClassCastException: android.app.Application cannot be cast to xxxxxxx
+```
+
+위와같이 CastingException이 발생하는데 그럴때면 아래와 같이 `AndroidManifest.xml`에 
+`application`에 `name`을 지정해준다.
+
+
+```
+<application
+	android:name=".MyApplication"
+>
+	
+</application>
+```
+
+
+**까먹지 말자!!**
