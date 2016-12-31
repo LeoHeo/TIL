@@ -59,3 +59,32 @@ Vue.component('my-cmp', {
   template: '<p>Server Status: {{ status }} </p>'  
 });
 ```
+
+
+
+### V-bind, v-model
+
+``` html
+<!-- v-bind는 속성을 주고자 할때 -->
+
+<!-- Normal -->
+<span title="title"/>
+
+<!-- Vue.js -->
+<span v-bind:title="title"/>
+<span :title="title"/>
+
+
+<!-- v-model은 data property를 주고자 할때 -->
+
+<!-- Normal -->
+<span title="title"> Hello world </span>
+
+<!-- Vue.js -->
+<!-- hello라는 property에 hello world에 저장 -->
+<span v-bind:title="title"> {{hello}} </span>
+<span :title="title"> {{hello}} </span>
+```
+
+
+
