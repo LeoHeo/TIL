@@ -1,6 +1,9 @@
 # TIL
 Today I Learned
 
+## AWS Reserved Instance 설명
+- [Reserved Instance 설명](https://gist.github.com/LeoHeo/b7d43d0a51fb555d08d5900052b2ca3c#file-reserved_instance-md)
+
 ## Android
 - [Android Parcelable](http://hjh5488.tistory.com/30)
 
