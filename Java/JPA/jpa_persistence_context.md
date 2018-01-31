@@ -1,13 +1,37 @@
-## Persistence Context
-- @Entity 붙인 클래스 엔티티를 영속 컨텍스트(Persistence Context)로 관리한다.
-- Persistence Context는 JPA가 관리하는 Entity 객체 집합
-- Persistence Context에 보관된 객체를 영속 객체(Persistent Object)라고 한다.
-- Persistence Context는 세션(Entity Manager)단위로 생긴다.
-- 세션 생성 시점에 영속 컨텍스트가 생성되고 세션 종료 시점에 컨텍스트가 사라진다.
+# JPA 영속성 관리
 
-## LifeCycle
-1. EntityManager create
-2. Transaction begin
-3. EntityManager를 통해 영속 컨텍스트에 객체를 추가하거나 구한다.
-4. Transaction commit -> 에러가 날 경우 rollback
-5. EntityManager close
+## EntityManagerFactory
+- 만드는 비용이 크기때문에 애플리케이션 전체에서 한개만 만들어서 공유
+- 여러 쓰레드가 동시에 접근해도 안전하므로 서로 다른 스레드 간에 공유
+
+## EntityManager
+- 만드는 비용이 크지 않기 때문에 요청에 따라 생성한다.
+- 여러 스레드가 동시에 접근하면 동시성 문제가 발생하므로 스레드간에 절대 공유하면 안 된다.
+
+### flush
+- 플러시라는 이름으로 인해 영속성 컨텍스트에 보관된 엔티티를 지운다고 생각하면 안된다.
+- 영속성 컨텍스트의 변경 내용을 데이터베이스에 동기화하는것이 플러시다.
+
+### detached
+- 영속 -> 준영속 만드는것
+- 영속성 컨텍스트에게 더는 해당 엔티티를 관리하지 말라는 것
+- 이 메소드를 호출하는 순간 1차 캐시부터 쓰기 지연 SQL 저장소까지 해당 엔티티를 관리하기 위한 모든 정보가 삭제
+
+## Persistence Context
+- 영속성 컨텍스트 -> 애플리케이션과 데이터베이스 사이에서 객체를 보관하는 가상의 데이터베이스 같은 역할
+- Entity를 영구 저장하는 환경
+- Entity를 식별자 값(@Id)으로 구분 -> 영속 상태는 식별자 값이 반드시 있어야 한다.
+- 트랜잭션을 커밋하는 순간 영속성 컨텍스트에 새로 저장된 엔티티를 데이터베이스에 반영하는데 이것을 flush라 한다.
+
+### Persistence Context가 Entity를 관리할때 장점
+- 1차 캐시
+- 동일성 보장
+- 트랜잭션을 지원하는 쓰기 지연
+- 변경 감지
+- 지연 로딩
+
+## Entity LifeCycle
+- 비영속(new/transient) -> 영속성 컨텍스트와 전혀 관계가 없는 상태
+- 영속(managed) -> 영속성 컨텍스트에 저장된 상태
+- 준영속(detached) -> 영속성 컨텍스트에 저장되었다가 분리된 상태
+- 삭제(removed) -> 
