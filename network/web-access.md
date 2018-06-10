@@ -34,7 +34,7 @@ www.google.com을 접속하는 행위를 우리는 보통 웹사이트을 열어
 - 적절한 데이터 애플리케이션 데이터를 전달하기 위해서 이용되는 프로토콜이 TCP(Transmission Control Protocol)입니다.
 - TCP에서는 애플리케이션 간에 신뢰성 있는 데이터 전송을 수행하기 위하여 `3 웨이 핸드 쉐이크(Three-way handshake)`라는 기법을 사용하여 TCP 연결을 성립시킵니다.
 
-#### 3 웨이 핸드 쉐이크(Three-way handshake)이란?
+#### 3-way 핸드 쉐이크(Three-way handshake)란?
 - 말 그대로 데이터 전송을 수행하는 애플리케이션끼리 `인사를 3번` 함으로써 연결을 성립시키는 기법을 말한다.
 
 ```
