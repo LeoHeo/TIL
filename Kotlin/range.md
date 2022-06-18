@@ -1,6 +1,6 @@
 > Kotlin lets you easily create ranges of values using the rangeTo() function from the kotlin.ranges package and its operator form ... Usually, rangeTo() is complemented by in or !in functions.
 
-Kotlin에 있는 rangeTo (in, !in)을 사용하면 쉽게 range을 구할 수 있음
+[Kotlin에 있는 range](https://kotlinlang.org/docs/ranges.html) rangeTo (in, !in)을 사용하면 쉽게 range을 구할 수 있음
 
 
 ```java
